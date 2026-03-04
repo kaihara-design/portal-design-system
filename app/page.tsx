@@ -86,8 +86,8 @@ export default function OverviewPage() {
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg progress-gradient shadow-sm" />
               <div>
-                <p className="text-sm font-medium text-foreground">#4f46e5 → #ad46ff</p>
-                <p className="text-xs text-muted-foreground">Indigo to Purple</p>
+                <p className="text-sm font-medium text-foreground">#403AEA → #381E9E</p>
+                <p className="text-xs text-muted-foreground">Indigo to Deep Purple</p>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function OverviewPage() {
           </div>
           <div>
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-2">Border Radius</p>
-            <p className="text-sm font-medium text-foreground">14px (0.875rem)</p>
+            <p className="text-sm font-medium text-foreground">8px (0.5rem)</p>
             <p className="text-xs text-muted-foreground">Base, matches Figma</p>
           </div>
         </div>
