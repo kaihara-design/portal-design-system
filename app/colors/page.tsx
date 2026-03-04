@@ -1,4 +1,4 @@
-import { colorTokens, sidebarTokens } from "@/lib/tokens"
+import { colorTokens, sidebarTokens, brandTokens, gradientTokens } from "@/lib/tokens"
 
 function ColorSwatch({ name, variable, value, usage }: {
   name: string
@@ -71,9 +71,15 @@ export default function ColorsPage() {
         </div>
       </Section>
 
-      <Section title="Borders & Interactive" description="Border uses rgba for glassmorphism. Input uses a solid value for form fields.">
+      <Section title="Borders & Interactive">
         <div className="grid grid-cols-3 gap-3">
           {[...borderGroup, ...semanticGroup].map(t => <ColorSwatch key={t.variable} {...t} />)}
+        </div>
+      </Section>
+
+      <Section title="Brand Colors" description="Primary brand color and named accent colors.">
+        <div className="grid grid-cols-3 gap-3">
+          {brandTokens.map(t => <ColorSwatch key={t.variable} {...t} />)}
         </div>
       </Section>
 
@@ -85,33 +91,13 @@ export default function ColorsPage() {
 
       {/* Gradient */}
       <Section title="Accent Gradient" description="Used in progress bars and highlighted UI elements.">
-        <div className="card-glass rounded-xl overflow-hidden">
+        <div className="rounded-xl overflow-hidden border border-border">
           <div className="h-16 w-full progress-gradient" />
-          <div className="p-4 space-y-1">
-            <p className="text-xs font-semibold text-foreground">Progress Gradient</p>
-            <p className="text-[10px] font-mono text-muted-foreground">.progress-gradient</p>
-            <p className="text-[10px] font-mono text-muted-foreground">linear-gradient(90deg, #4f46e5, #ad46ff)</p>
-            <p className="text-[10px] font-mono text-muted-foreground">box-shadow: 0 0 12px rgba(97,95,255,0.4)</p>
-          </div>
-        </div>
-      </Section>
-
-      {/* Glassmorphism comparison */}
-      <Section title="Glassmorphism Pattern" description="Cards use a frosted-glass effect vs a plain white card.">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <p className="text-xs font-medium text-muted-foreground mb-2">.card-glass (current)</p>
-            <div className="card-glass rounded-2xl p-5">
-              <p className="text-sm font-medium text-foreground">Glass card</p>
-              <p className="text-xs text-muted-foreground">rgba(255,255,255,0.8) + blur(12px)</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-xs font-medium text-muted-foreground mb-2">Plain white (reference)</p>
-            <div className="bg-white rounded-2xl p-5 border border-[#e2e8f0]">
-              <p className="text-sm font-medium text-foreground">Plain card</p>
-              <p className="text-xs text-muted-foreground">bg-white + solid border</p>
-            </div>
+          <div className="p-4 space-y-1 bg-white">
+            <p className="text-xs font-semibold text-foreground">{gradientTokens.progress.name}</p>
+            <p className="text-[10px] font-mono text-muted-foreground">{gradientTokens.progress.class}</p>
+            <p className="text-[10px] font-mono text-muted-foreground">{gradientTokens.progress.css}</p>
+            <p className="text-[10px] font-mono text-muted-foreground">box-shadow: 0 0 12px {gradientTokens.progress.glow}</p>
           </div>
         </div>
       </Section>
