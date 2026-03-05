@@ -36,8 +36,8 @@ export const colorTokens: ColorToken[] = [
   { name: "Popover Foreground", variable: "--popover-foreground", value: "#0a0a0a", usage: "Popover text", group: "surface" },
 
   // Secondary
-  { name: "Secondary", variable: "--secondary", value: "#f5f5f5", usage: "Secondary elements", group: "secondary" },
-  { name: "Secondary Foreground", variable: "--secondary-foreground", value: "#171717", usage: "Text on secondary", group: "secondary" },
+  { name: "Secondary", variable: "--secondary", value: "#290D4D", usage: "Secondary brand color — Shadow Grape", group: "secondary" },
+  { name: "Secondary Foreground", variable: "--secondary-foreground", value: "#fafafa", usage: "Text on secondary bg", group: "secondary" },
 
   // Muted
   { name: "Muted", variable: "--muted", value: "#f5f5f5", usage: "Disabled / de-emphasized", group: "muted" },
