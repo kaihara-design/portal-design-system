@@ -43,7 +43,7 @@
 }
 
 :root {
-  --radius: 0.5rem; /* 8px */
+  --radius: 0.875rem; /* 14px */
   --background: #ffffff;
   --foreground: #0a0a0a;
   --card: #ffffff;
@@ -102,7 +102,7 @@
 
   /* Primary button shadow */
   .btn-shadow {
-    box-shadow: 0px 4px 20px rgba(79, 70, 229, 0.3);
+    box-shadow: 0px 4px 8px rgba(79, 70, 229, 0.18);
   }
 
   /* Fade-in animation */

@@ -128,7 +128,7 @@ export default function SpacingPage() {
           <UtilityDemo
             name="Button Shadow"
             className="btn-shadow"
-            description="box-shadow: 0 4px 20px rgba(79,70,229,0.3) — adds depth to primary buttons"
+            description="box-shadow: 0px 4px 8px rgba(79,70,229,0.18) — subtle depth on primary buttons"
           >
             <button className="bg-primary text-primary-foreground text-sm font-medium px-4 py-2 rounded-xl btn-shadow">
               Primary Action

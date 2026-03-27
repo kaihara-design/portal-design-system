@@ -84,13 +84,13 @@ export const sidebarTokens: ColorToken[] = [
 ]
 
 export const radiusTokens: RadiusToken[] = [
-  { name: "sm", variable: "--radius-sm", computed: "calc(var(--radius) - 4px)", px: "4px" },
-  { name: "md", variable: "--radius-md", computed: "calc(var(--radius) - 2px)", px: "6px" },
-  { name: "lg", variable: "--radius-lg", computed: "var(--radius)", px: "8px (base)" },
-  { name: "xl", variable: "--radius-xl", computed: "calc(var(--radius) + 4px)", px: "12px" },
-  { name: "2xl", variable: "--radius-2xl", computed: "calc(var(--radius) + 8px)", px: "16px" },
-  { name: "3xl", variable: "--radius-3xl", computed: "calc(var(--radius) + 12px)", px: "20px" },
-  { name: "4xl", variable: "--radius-4xl", computed: "calc(var(--radius) + 16px)", px: "24px" },
+  { name: "sm", variable: "--radius-sm", computed: "calc(var(--radius) - 4px)", px: "10px" },
+  { name: "md", variable: "--radius-md", computed: "calc(var(--radius) - 2px)", px: "12px" },
+  { name: "lg", variable: "--radius-lg", computed: "var(--radius)", px: "14px (base)" },
+  { name: "xl", variable: "--radius-xl", computed: "calc(var(--radius) + 4px)", px: "18px" },
+  { name: "2xl", variable: "--radius-2xl", computed: "calc(var(--radius) + 8px)", px: "22px" },
+  { name: "3xl", variable: "--radius-3xl", computed: "calc(var(--radius) + 12px)", px: "26px" },
+  { name: "4xl", variable: "--radius-4xl", computed: "calc(var(--radius) + 16px)", px: "30px" },
 ]
 
 export const typeScale: TypeScale[] = [
